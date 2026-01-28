@@ -30,7 +30,7 @@ def run_health_server():
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    markup.add(types.KeyboardButton("💡 Идея"))
+    markup.add(types.KeyboardButton("Идея"))
     bot.send_message(message.chat.id, 'Я Стошка - Искусственный Интеллект студенческий коллективов СТО. Напиши "Стошка, ", чтобы я начал размышлять или нажми кнопку, чтобы я предложил тебе идею творческого номера', reply_markup=markup)
 
 @bot.message_handler(func=lambda message: True)
